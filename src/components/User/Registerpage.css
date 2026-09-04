@@ -1,0 +1,91 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.register-card {
+    width: 60%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.register-subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group-container {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.half-width {
+    flex: 1;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.success-message {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:disabled {
+    background-color: #cccccc;
+}
+
+.register-footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}

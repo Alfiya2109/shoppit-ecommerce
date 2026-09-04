@@ -1,0 +1,31 @@
+@media (max-width: 1000px) {
+    .responsiveCart {
+        margin-top: 20px;
+    }
+}
+
+.stickyNavbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 1030; /* Ensure it stays above other elements */
+    background-color: #fff; /* Set a background color for the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    padding: 10px 20px; /* Add padding for better spacing */
+}
+
+.navLinks {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Space out the links */
+    align-items: center; /* Center the items vertically */
+}
+
+.navLink {
+    margin: 0 15px; /* Add margin between links */
+    color: #333; /* Set a color for the links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navLink:hover {
+    color: #6050DC; /* Change color on hover */
+}

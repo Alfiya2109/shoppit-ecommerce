@@ -1,0 +1,67 @@
+.col {
+    margin: 2rem 0; /* Increased margin top and bottom between cards */
+    display: flex;
+    justify-content: center; /* Center the cards */
+    gap: 2rem; /* Add gap between cards */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    max-width: 900px; /* Limit the width to accommodate only 3 cards */
+}
+
+.link {
+    text-decoration: none;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px; /* Set a maximum width for uniformity */
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Increased shadow for more depth */
+    transition: transform 0.2s;
+    cursor: pointer;
+    display: flex; /* Use flexbox for consistent sizing */
+    flex-direction: column; /* Stack children vertically */
+    height: 100%; /* Ensure all cards are the same height */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cardImgWrapper {
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cardImgTop {
+    width: 100%;
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    display: block;
+}
+
+.cardBody {
+    padding: 1rem;
+    text-align: center;
+    flex-grow: 1; /* Allow the body to take up remaining space */
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.cardText {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .col {
+        flex-direction: row; /* Ensure cards are in a row on smaller screens */
+        justify-content: space-between; /* Space out cards */
+    }
+}
