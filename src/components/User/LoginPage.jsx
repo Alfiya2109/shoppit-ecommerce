@@ -57,9 +57,9 @@ const LoginPage = () => {
                     <h2 className="login-title">Welcome Back</h2>
                     <p className="login-subtitle">Please login to your account</p>
 
-                    <div className="alert alert-info py-2 px-3 mb-3 text-center" style={{ fontSize: '0.88rem', borderRadius: '8px', backgroundColor: '#eef2ff', borderColor: '#c7d2fe', color: '#3730a3' }}>
-                        <strong>🔑 Demo Credentials:</strong><br />
-                        Username: <code>admin</code> &nbsp;|&nbsp; Password: <code>admin123</code>
+                    <div className="demo-badge-box">
+                        <div className="demo-badge-title">🔑 Demo Credentials:</div>
+                        <div className="demo-badge-text">Username: <code>admin</code> &nbsp;|&nbsp; Password: <code>admin123</code></div>
                     </div>
 
                     <form onSubmit={handleSubmit}>

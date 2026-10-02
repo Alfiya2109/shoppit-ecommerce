@@ -1,95 +1,174 @@
-/* Make the login page cover the full height of the screen */
+/* Ultra-Modern Login Page Styling */
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Ensures it takes full height */
+    min-height: 85vh;
     width: 100%;
-    background: #6050DC; 
-    padding: 0; /* Remove extra spacing */
-    margin: 0; /* Ensure no gaps */
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
 
 /* Login Card */
 .login-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+    padding: 40px 40px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     width: 100%;
-    max-width: 400px;
+    max-width: 440px;
+    text-align: left;
+    animation: fadeInSlide 0.5s ease-out;
+    box-sizing: border-box;
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Titles */
+.login-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 6px;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.login-subtitle {
+    font-size: 14.5px;
+    color: #64748b;
+    margin-bottom: 24px;
     text-align: center;
 }
 
-/* Login Title */
-.login-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-/* Subtitle */
-.login-subtitle {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
 /* Form Styles */
-form {
+.login-card form {
     display: flex;
     flex-direction: column;
+    gap: 16px;
+}
+
+.login-card .form-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #334155;
+    margin-bottom: 6px;
+    display: block;
 }
 
 /* Input Fields */
-input[type="text"], input[type="password"] {
+.login-card input[type="text"], 
+.login-card input[type="password"] {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: 0.3s ease-in-out;
+    padding: 12px 16px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: #f8fafc;
+    color: #1e293b;
+    transition: all 0.25s ease-in-out;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-input[type="text"]:focus, input[type="password"]:focus {
-    border-color: #6e8efb;
+.login-card input[type="text"]:focus, 
+.login-card input[type="password"]:focus {
+    border-color: #6366f1;
+    background-color: #ffffff;
     outline: none;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
 }
 
 /* Login Button */
-button {
-    background: #6e8efb;
+.login-card button[type="submit"] {
+    background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
     color: white;
     font-size: 16px;
-    padding: 12px;
+    font-weight: 700;
+    padding: 14px;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
-    transition: 0.3s;
+    margin-top: 8px;
+    box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.4);
+    transition: all 0.3s ease;
 }
 
-button:hover {
-    background: #5a7beb;
+.login-card button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px -5px rgba(79, 70, 229, 0.5);
+    background: linear-gradient(135deg, #4338ca 0%, #4f46e5 100%);
+}
+
+.login-card button[type="submit"]:disabled {
+    background: #cbd5e1;
+    box-shadow: none;
+    cursor: not-allowed;
+    transform: none;
 }
 
 /* Footer Links */
 .login-footer {
-    margin-top: 15px;
+    margin-top: 22px;
+    text-align: center;
 }
 
 .login-footer p {
     font-size: 14px;
-    color: #666;
+    color: #64748b;
+    margin-bottom: 6px;
 }
 
 .login-footer a {
-    color: #6e8efb;
+    color: #4f46e5;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
+    transition: color 0.2s;
 }
 
 .login-footer a:hover {
+    color: #3730a3;
     text-decoration: underline;
+}
+
+/* Demo Credentials Badge */
+.demo-badge-box {
+    background: #eef2ff;
+    border: 1px solid #c7d2fe;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.demo-badge-title {
+    font-weight: 700;
+    color: #3730a3;
+    font-size: 13.5px;
+    margin-bottom: 4px;
+}
+
+.demo-badge-text {
+    font-size: 13px;
+    color: #4338ca;
+}
+
+.demo-badge-text code {
+    background: #ffffff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-weight: 700;
+    border: 1px solid #c7d2fe;
 }
