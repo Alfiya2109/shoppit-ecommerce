@@ -64,8 +64,8 @@ const CartItem = ({ item, setCartTotal,setCartItems, cartItems, setNumCartItems 
                 style={{ backgroundColor: '#f8f9fa', borderRadius: '8px' }}
             >
                 <img
-                    src={`${BASE_URL}${item.product.image}`}
-                    alt="Product Image"
+                    src={item.product?.image ? (item.product.image.startsWith('http') ? item.product.image : `${BASE_URL}/${item.product.image}`) : '/default-image.jpg'}
+                    alt={item.product?.name || "Product Image"}
                     className="img-fluid"
                     style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '5px' }}
                 />

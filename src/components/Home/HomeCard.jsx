@@ -21,7 +21,7 @@ const HomeCard = ({ product }) => {
           <div className={styles.cardImgWrapper}>
             {/* Ensure that product.imageUrl or similar prop exists */}
             <img
-              src={product.image ? `${BASE_URL}${product.image}` : '/default-image.jpg'} // Use the correct image URL from the product prop, fallback to a default image
+              src={product.image ? (product.image.startsWith('http') ? product.image : `${BASE_URL}/${product.image}`) : '/default-image.jpg'} // Support both http and local urls
               className={styles.cardImgTop}
               alt={product.name}
             />

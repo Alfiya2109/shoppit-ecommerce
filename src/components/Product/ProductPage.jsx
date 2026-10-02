@@ -93,9 +93,9 @@ const ProductPage = ({ setNumCartItems }) => {
                         <div className="col-md-6">
                         <img
                             className="card-img-top mb-5 mb-md-0"
-                            src={product.image} // Correctly concatenate the base URL and image path
+                            src={product.image ? (product.image.startsWith('http') ? product.image : `${BASE_URL}/${product.image}`) : '/default-image.jpg'}
                             alt={product.name || 'Product Image'}
-                            style={{ width: '80%', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }} // Adjusted size, added shadow for better styling
+                            style={{ width: '80%', maxHeight: '420px', objectFit: 'cover', borderRadius: '12px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}
                         />
                         </div>
                         <div className="col-md-6">

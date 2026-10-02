@@ -1,0 +1,119 @@
+[
+  {
+    "id": 2,
+    "name": "Classmate Pulse 6 Subject Spiral Notebook",
+    "slug": "classmate-pulse-6-subject-spiral-notebook-1",
+    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&auto=format&fit=crop&q=80",
+    "description": "Unruled notebook, 300 pages, spiral binding, soft cover, 240mm x 180mm. Classmate uses eco friendly and elemental chlorine free paper. Ideal for students, journal writing and office note-taking.",
+    "price": "392.00",
+    "category": "Accessories"
+  },
+  {
+    "id": 4,
+    "name": "Lifelong PVC Hex Dumbbells Pack of 2",
+    "slug": "lifelong-pvc-hex-dumbbells-pack-of-2",
+    "image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=600&auto=format&fit=crop&q=80",
+    "description": "Set of 2 PVC hex dumbbells for resistance training; each dumbbell weighs 5 kg (total 10 kg weight). Made in India. Easy grip and anti-slip finish. Perfect addition to aerobic and home workouts.",
+    "price": "509.00",
+    "category": "Accessories"
+  },
+  {
+    "id": 5,
+    "name": "Allen Solly Men's Solid Regular Fit Polo",
+    "slug": "allen-solly-mens-solid-regular-fit-polo",
+    "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=600&auto=format&fit=crop&q=80",
+    "description": "Premium casual polo t-shirt in solid color. 60% Cotton, 40% Polyester blend. Half sleeve with band collar and button closure. Breathable fabric tailored for everyday comfort.",
+    "price": "582.00",
+    "category": "Clothing"
+  },
+  {
+    "id": 6,
+    "name": "earthsave Insulated Lunch Bag",
+    "slug": "earthsave-insulated-lunch-bag",
+    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=600&auto=format&fit=crop&q=80",
+    "description": "Spacious canvas insulated lunch bag with dedicated 500ml water bottle pouch. Thermal insulation keeps food fresh and hot/cold for hours. Waterproof inner lining, washable and reusable.",
+    "price": "474.00",
+    "category": "Bags"
+  },
+  {
+    "id": 7,
+    "name": "GEOCARTER Wall Mobile Holder & Stand",
+    "slug": "geocarter-wall-mobile-holder",
+    "image": "https://images.unsplash.com/photo-1586105251261-72a756497a11?w=600&auto=format&fit=crop&q=80",
+    "description": "Versatile multi-functional wall mount organizer for mobile charging, remote control storage, and cable management. Crafted from durable lightweight plastic with strong adhesive wall grip.",
+    "price": "379.00",
+    "category": "Accessories"
+  },
+  {
+    "id": 8,
+    "name": "CB-COLEBROOK Cotton Casual Shirts for Men's",
+    "slug": "cb-colebrook-cotton-casual-shirts-for-mens",
+    "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600&auto=format&fit=crop&q=80",
+    "description": "100% Cotton casual full sleeve shirt with anti-shrink treatment. Spread collar, button placket, and front pocket. Lightweight, cool, and breathable. Ideal for office casual or weekend wear.",
+    "price": "499.00",
+    "category": "Clothing"
+  },
+  {
+    "id": 9,
+    "name": "Disney WIKI Champ 2 Backpack",
+    "slug": "wiki-champ-2-disney-backpack-16-l",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&auto=format&fit=crop&q=80",
+    "description": "Double compartment school/travel bag with 1 bottle pocket, reverse coil zippers, padded shoulder straps, and durable webbing haul loop. 16 Liters capacity.",
+    "price": "799.00",
+    "category": "Bags"
+  },
+  {
+    "id": 10,
+    "name": "ComfortsSteps Women Bellies & Ballerinas",
+    "slug": "comfortssteps-women-bellies-ballerinas",
+    "image": "https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?w=600&auto=format&fit=crop&q=80",
+    "description": "Premium patent leather slip-on ballerinas. Cushioned insole, non-slip rubber grip, and elegant finish. Perfect for both office formal wear and casual outings.",
+    "price": "249.00",
+    "category": "Shoes"
+  },
+  {
+    "id": 11,
+    "name": "Bellies for Women Stylist Patent Ballerinas",
+    "slug": "bellies-for-women-stylist-patent",
+    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&auto=format&fit=crop&q=80",
+    "description": "Gloss patent synthetic leather ballerinas from Emporio Fashion Hub. Attractive modern silhouette, breathable inner lining, and flexible outsole.",
+    "price": "500.00",
+    "category": "Shoes"
+  },
+  {
+    "id": 12,
+    "name": "Toddler Baby Girl Summer Princess Dress",
+    "slug": "toddler-baby-girl-summer-dress",
+    "image": "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=600&auto=format&fit=crop&q=80",
+    "description": "Sleeveless A-line floral princess party frock with multi-layered net and ultra-soft cotton lining. Breathable and gentle on infant skin.",
+    "price": "400.00",
+    "category": "Clothing"
+  },
+  {
+    "id": 13,
+    "name": "Mahganya 3-Light Jhumar Chandelier",
+    "slug": "mahganya-3-light-jhumar",
+    "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=600&auto=format&fit=crop&q=80",
+    "description": "Rustic rope and Edison bulb ceiling chandelier. Warm vintage lighting for living room, dining area, balcony, or coffee shop. Easy to mount and assemble.",
+    "price": "749.00",
+    "category": "Accessories"
+  },
+  {
+    "id": 14,
+    "name": "Zebronics-NS1500 Laptop Stand",
+    "slug": "zebronics-ns1500-laptop-stand",
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&auto=format&fit=crop&q=80",
+    "description": "Foldable ergonomic aluminum laptop stand designed for comfortable viewing angles and improved cooling. Non-slip silicone padding supports laptops up to 17 inches.",
+    "price": "299.00",
+    "category": "Electronics"
+  },
+  {
+    "id": 19,
+    "name": "Adorable Strawberry Rabbit Plushie",
+    "slug": "dorable-strawberry-rabbit-plushie",
+    "image": "https://images.unsplash.com/photo-1563089145-599997674d42?w=600&auto=format&fit=crop&q=80",
+    "description": "Ultra-soft cute bunny plush soft toy in pink strawberry hood theme. 15 inches height, premium cotton stuffing, skin-friendly and hypoallergenic.",
+    "price": "133.00",
+    "category": "Toys"
+  }
+]

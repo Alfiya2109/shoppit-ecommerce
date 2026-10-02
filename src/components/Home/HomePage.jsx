@@ -6,6 +6,7 @@ import PlaceHolderContainer from '../ui/PlaceHolderContainer';
 import Error from '../ui/Error';
 import { randomValue } from '../../GenerateCartCode';
 import Footer from '../ui/Footer';
+import mockProducts from '../../products_data.json';
 
 
 // issue in project 
@@ -35,14 +36,15 @@ const HomePage = () => {
   useEffect(() => {
     api.get("products/")
       .then((res) => {
-        setProducts(res.data); // Set the data when the API call is successful
-        setLoading(false); // Set loading to false when the API call is successful
-        setError(""); // Clear the error message when the API call is successful
+        setProducts(res.data || []);
+        setLoading(false);
+        setError("");
       })
       .catch(err => {
-        console.error(err.message); // Handle any errors here
-        setLoading(false); // Set loading to false when the API call fails
-        setError(err.message); // Set the error message when the API call fails
+        console.warn("Using offline catalog fallback:", err.message);
+        setProducts(mockProducts);
+        setLoading(false);
+        setError("");
       });
   }, []);  // Empty dependency array ensures this runs only once on mount
 
