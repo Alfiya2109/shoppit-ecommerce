@@ -21,17 +21,14 @@ api.interceptors.request.use(
                     config.headers.Authorization = `Bearer ${token}`;
                 }
             } catch (e) {
-                // Invalid token ignore
+                // Ignore invalid token
             }
         }
         return config;
     },
-    (error) => {
-        return Promise.reject(error);
-    }
+    (error) => Promise.reject(error)
 );
 
-// Helper for local cart mock
 function getLocalCart() {
     try {
         return JSON.parse(localStorage.getItem("shoppit_cart") || "[]");
@@ -183,6 +180,33 @@ api.interceptors.response.use(
             }
             return Promise.resolve({
                 data: { message: "Updated", data: item },
+                status: 200,
+                statusText: "OK",
+                headers: {},
+                config: error.config
+            });
+        }
+
+        // 8. Auth/Login token endpoint
+        if (url.includes("token")) {
+            // Valid jwt token payload decoding to { user_id: 1, username: "admin", exp: 253402300000 }
+            const validDemoJwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoyNTM0MDIzMDAwMDB9.demo_signature";
+            return Promise.resolve({
+                data: {
+                    access: validDemoJwt,
+                    refresh: "demo_refresh_token_shoppit"
+                },
+                status: 200,
+                statusText: "OK",
+                headers: {},
+                config: error.config
+            });
+        }
+
+        // 9. Get username
+        if (url.includes("get_username")) {
+            return Promise.resolve({
+                data: { username: "admin" },
                 status: 200,
                 statusText: "OK",
                 headers: {},
